@@ -1,0 +1,22 @@
+ul, ol {
+  list-style: none;
+}
+
+.top_menu{
+	margin-top:7px;
+    margin-left: 37px;
+}
+
+.navbar.navbar-bakers { background-color: #fff; color: #000; font-weight: bold; }
+.navbar.navbar-transparent .logo-container .brand { color: #000; }
+.index-page .wrapper > .header { margin-top: 40px; }
+.container { margin-right: auto; margin-left: auto; padding-left: 0px; padding-right: 0px; }
+.vh100 { height: 100vh; }
+.navbar-nav{ padding: 0 30px; }
+.ui-loader{ display:none; }
+.bigCate{ padding:4%; }
+.title h3 { font-weight:bold; padding-top:5%;}
+.slideCon{ padding:0 5%; }
+.slideCon h4 {font-weight:bold; padding: 2% 0;}
+
+.checkbox label, .radio label, label { color: #333; }

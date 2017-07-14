@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Material Kit by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<!-- Bakers styleSheet -->
+	<link href="css/common.css" rel="stylesheet" />
+	<link href="css/index.css" rel="stylesheet" />
+	<link href="css/list.css" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll navbar-bakers">
+	<div class="container">
+        <div class="navbar-header">
+	    	<button type="button" class="navbar-toggle top_menu" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+	    	<a href="./main.html">
+	        	<div class="logo-container">
+	                <div class="brand">Pick 2018</div>
+				</div>
+	      	</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="navigation-index">
+	    	<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="components-documentation.html" target="_blank">
+						<i class="material-icons">assignment</i> 스케쥴 확인
+					</a>
+				</li>
+				<li>
+					<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
+						<i class="material-icons">turned_in_not</i> 설정한 알림 확인
+					</a>
+				</li>
+	    	</ul>
+	    </div>
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+	<div class="header header-filter">
+		<div class="container">
+
+			<!-- Carousel Card -->
+			<div class="card card-raised card-carousel vh100">
+				<div id="carousel-example-generic" class="carousel slide vh100" data-ride="carousel" data-interval="false">
+					<div class="carousel slide" data-ride="carousel" data-interval="false">
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active vh100" id="page01" >
+								<div class="title bigCate">
+									<h3>종목</h3>
+								</div>
+								<div class="slideCon">
+									<h4>설상</h4>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes">
+											Unchecked
+										</label>
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes" checked>
+											Checked
+										</label>
+									</div>
+
+									<h4>빙상</h4>
+									<h4>슬라이딩</h4>
+								</div>
+							</div>
+							<div class="item vh100" id="page02" >
+								<div class="title bigCate">
+									<h3>참가국</h3>
+								</div>
+							</div>
+							<div class="item vh100" id="page03" >
+								<div class="title bigCate">
+									<h3>경기일정</h3>
+
+
+
+									<!--리스트라네-->
+									<div id="schedule_box">
+
+		 								<div class="space-20"></div>
+
+		 									<ul class="schedule_lsit">
+		 										<li>
+		 											<!-- 종목, 참가국1 vs 참가국2 시간 -->
+
+													<div class="row_pho">
+		 												<!-- 종목 -->
+		 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 														<img src="assets/img/picto-alpine-skiing-speed-b.png" alt="Rounded Image" class="img-circle img-responsive">
+		 												</div>
+		 												<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+		 													<ul class="vs_list">
+		 														<li class="pc_name" style="margin-left:15px;">
+		 															<button class="btn btn-white btn-sm">용평 알파인 경기장</button>
+		 														</li>
+		 														<li>
+		 															<!-- 참가국1 -->
+		 															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 																	<img src="assets/img/37.png" alt="Circle Image" class="img-circle img-responsive">
+		 															</div>
+		 															<!-- vs -->
+		 															<div class="text_vs col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		 																	vs
+		 															</div>
+		 															<!-- 참가국2 -->
+		 															<div class="contry col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 																	 <img src="assets/img/10.png" alt="Raised Image" class="img-circle img-responsive">
+		 															</div>
+		 															<!-- 시간 -->
+		 															<div class="text_wh col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		 																	12:00
+		 															</div>
+		 														</li>
+		 													</ul>
+		 												</div>
+		 											</div>
+
+		 												<!-- 장소, 실시간보러가기, 알림설정 버튼 -->
+		 					 						 <div id="place_list" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		 					 							 <button class="btn btn-info col-xs-5 col-sm-5 col-md-5 col-lg-5 mg10">
+		 													 <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+		 												 </button>
+		 					 							 <button class="btn btn-warning  col-xs-5 col-sm-5 col-md-5 col-lg-5 mg10">
+		 													 <i class="fa fa-bell-slash" aria-hidden="true"></i>
+		 												 </button>
+		 					 						 </div>
+		 										</li>
+
+		 									</ul>
+
+
+		  			 	     </div>
+
+
+									<!--리스트라네-->
+
+
+									<!--RIdkddjflkjaldsjfladhslkghakdkdk-->
+									<!--리스트라네-->
+									<div id="schedule_box">
+
+		 								<div class="space-20"></div>
+
+		 									<ul class="schedule_lsit">
+		 										<li>
+		 											<!-- 종목, 참가국1 vs 참가국2 시간 -->
+
+													<div class="row_pho">
+		 												<!-- 종목 -->
+		 												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 														<img src="assets/img/picto-alpine-skiing-speed-b.png" alt="Rounded Image" class="img-circle img-responsive">
+		 												</div>
+		 												<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+		 													<ul class="vs_list">
+		 														<li class="pc_name" style="margin-left:15px;">
+		 															<button class="btn btn-white btn-sm">용평 알파인 경기장</button>
+		 														</li>
+		 														<li>
+		 															<!-- 참가국1 -->
+		 															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 																	<img src="assets/img/37.png" alt="Circle Image" class="img-circle img-responsive">
+		 															</div>
+		 															<!-- vs -->
+		 															<div class="text_vs col-xs-1 col-sm-1 col-md-1 col-lg-1">
+		 																	vs
+		 															</div>
+		 															<!-- 참가국2 -->
+		 															<div class="contry col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		 																	 <img src="assets/img/10.png" alt="Raised Image" class="img-circle img-responsive">
+		 															</div>
+		 															<!-- 시간 -->
+		 															<div class="text_wh col-xs-2 col-sm-2 col-md-2 col-lg-2">
+		 																	12:00
+		 															</div>
+		 														</li>
+		 													</ul>
+		 												</div>
+		 											</div>
+
+		 												<!-- 장소, 실시간보러가기, 알림설정 버튼 -->
+		 					 						 <div id="place_list" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		 					 							 <button class="btn btn-info col-xs-5 col-sm-5 col-md-5 col-lg-5 mg10">
+		 													 <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+		 												 </button>
+		 					 							 <button class="btn btn-warning  col-xs-5 col-sm-5 col-md-5 col-lg-5 mg10">
+		 													 <i class="fa fa-bell-slash" aria-hidden="true"></i>
+		 												 </button>
+		 					 						 </div>
+		 										</li>
+
+		 									</ul>
+
+
+		  			 	     </div>
+
+
+									<!--리스트라네-->
+									<!--alsdlgahsdlghalsdhlgahsdglahldshgalkdshlgkahsldhg--->
+
+
+
+
+
+
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- End Carousel Card -->
+
+		</div>
+	</div>
+
+</div>
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<!-- jQuery mobile-->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		   $("#carousel-example-generic").swiperight(function() {
+			  $(this).carousel('prev');
+			});
+		   $("#carousel-example-generic").swipeleft(function() {
+			  $(this).carousel('next');
+		   });
+
+		});
+	</script>
+</html>

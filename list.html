@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>스케줄리스트</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<!-- Bakers styleSheet -->
+	<link href="assets/css/common.css" rel="stylesheet" />
+	<link href="assets/css/list.css" rel="stylesheet" />
+
+</head>
+
+<body class="index-page">
+<!-- Navbar -->
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<div class="container">
+        <div class="navbar-header">
+				<div class="text_color">
+						 Pick 2018
+					</div>
+	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
+
+	     </div>
+
+
+	</div>
+</nav>
+<!-- End Navbar -->
+
+<div class="wrapper">
+
+				<div class="space-50"></div>
+
+	           <div id="images">
+
+								<div class="space-20"></div>
+
+									<ul class="schedule_lsit">
+										<li>
+											<!-- 종목, 참가국1 vs 참가국2 시간 -->
+											<div class="row">
+												<!-- 종목 -->
+												<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+														<img src="assets/img/picto-alpine-skiing-speed-b.png" alt="Rounded Image" class="img-circle img-responsive">
+												</div>
+												<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+													<ul class="vs_list">
+														<li>
+															<button class="btn btn-white btn-sm">용평 알파인 경기장</button>
+														</li>
+														<li>
+															<!-- 참가국1 -->
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+																	<img src="assets/img/37.png" alt="Circle Image" class="img-circle img-responsive">
+															</div>
+															<!-- vs -->
+															<div class="text_vs col-xs-2 col-sm-2 col-md-2 col-lg-2">
+																	vs
+															</div>
+															<!-- 참가국2 -->
+															<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+																	 <img src="assets/img/10.png" alt="Raised Image" class="img-circle img-responsive">
+															</div>
+															<!-- 시간 -->
+															<div class="text_wh col-xs-2 col-sm-2 col-md-2 col-lg-2">
+																	12:00
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+
+												<!-- 장소, 실시간보러가기, 알림설정 버튼 -->
+					 						 <div id="place_list" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					 							 <button class="btn btn-info col-xs-5 col-sm-5 col-md-5 col-lg-5">
+													 <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+												 </button>
+					 							 <button class="btn btn-warning  col-xs-5 col-sm-5 col-md-5 col-lg-5">
+													 <i class="fa fa-bell-slash" aria-hidden="true"></i>
+												 </button>
+					 						 </div>
+										</li>
+
+									</ul>
+
+
+ 			 	     </div>
+
+
+</div>
+
+
+
+
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+            window_width = $(window).width();
+
+            if (window_width >= 992){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
